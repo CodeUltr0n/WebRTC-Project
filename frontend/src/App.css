@@ -1,0 +1,239 @@
+.landingPageContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    /* background: url("/public/Header.png"); */
+    background-size: 1100px 600px;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+/* this is for overlapping of  */
+.landingPageContainer::after{  
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/Header.png");
+    background-size: 1100px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+    
+}
+
+.landingPageContainer nav{
+    padding-inline: 1.2rem;
+    padding-block: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    
+}
+
+.landingPageContainer nav h2{
+    font-size: 1.5rem;
+    font-weight: 500px;
+}
+
+.landingPageContainer nav .navlist{
+display: flex;
+gap: 30px;
+cursor: pointer;
+}
+
+.getStartedBtn {
+    padding: 0.635rem 1.35rem;
+    background-color: rgba(100, 178, 76, 0.792);
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.375rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.getStartedBtn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* .homeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+
+/* Navbar */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background-color: #1f1f1f; */
+  /* color: white; */
+
+
+.navbar-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* Meet Section */
+/* .meetContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftPanel {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 400px;
+}
+
+.meetingInput {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 10px;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8; /* subtle background */
+  /* padding: 2rem;
+} */
+
+/* .rightPanel img {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+} */ */ */
+
+
+.homeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f7f7f7; */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Meet Section */
+.meetContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Left Panel */
+.leftPanel {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-left: 76px;
+  margin-top: 100px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  text-align: center;
+}
+
+.meetingInput {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 10px;
+}
+
+/* Right Panel */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 120px;
+   margin-top: 100px;
+  /* padding: 2rem; */
+}
+
+.rightPanel img {
+  max-width: 30vw;
+  height: auto;
+  /* object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease; */
+}
+
+/* .rightPanel img:hover {
+  transform: scale(1.05);
+} */
+
+/* Responsive for small screens */
+/* @media (max-width: 900px) {
+  .meetContainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .leftPanel {
+    width: 100%;
+    flex: none;
+  }
+
+  .rightPanel {
+    width: 100%;
+    flex: none;
+    margin-top: 2rem;
+  }
+} */

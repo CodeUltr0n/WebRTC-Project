@@ -1,0 +1,219 @@
+/* Video meet component styles - Add your custom styles here */
+/* .video-meet-container{
+    background-color: black;
+    min-height: 100vh;
+} */
+
+/* Local (initiator) video as floating overlay */
+.local-video-section {
+  position: fixed;
+  bottom: 100px;
+  /* right: 20px; */
+  width: 220px;
+  height: 160px;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1000;
+  left:60px
+  
+}
+
+.local-video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* mirror effect like real video calls */
+}
+
+
+/* Remote participants main view */
+.remote-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.remote-videos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: calc(100vh - 40px);
+}
+
+.remote-video-container {
+  position: relative;
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  width: 70%;
+  max-width: 900px;
+  height: 70%;
+}
+
+.remote-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Participant label (optional, future ready) */
+.remote-video-container::after {
+  content: "Participant";
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.buttonContainer {
+    position: absolute;
+    bottom: 8px;      /* distance from bottom */
+    left: 50%;         /* center horizontally */
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.buttonContainer svg{
+    font-size: 4rem;
+}
+
+.meet-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 18px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 20px;
+  border-radius: 40px;
+  z-index: 9999;
+}
+
+.control-btn {
+  background: #2b2b2b !important;
+  color: white !important;
+}
+
+.control-btn:hover {
+  background: #3a3a3a !important;
+}
+
+.end-call-btn {
+  background: red !important;
+}
+
+.end-call-btn:hover {
+  background: darkred !important;
+}
+
+.stage {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-video {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* When more than 1 participant */
+.stage.grid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* smaller min width */
+  grid-auto-rows: minmax(140px, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Remote videos */
+.remote-video {
+  width: 100%;
+  height: 100%;
+  background: black;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Single user → big center */
+.stage:not(.grid) .remote-video {
+  width: 100%;
+  height: 100%;
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+.chatRoom {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  width: 370px;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #333;
+  z-index: 10000;
+  height: 90vh;
+  border-radius: 10px;
+  bottom: 10vh;
+}
+
+.chatContainer{
+    position: relative;
+    height: 100%;
+}
+
+.chattingArea{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.chatHeader {
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.chatMessages {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.myMessage {
+  align-self: flex-end;
+  color: red;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.otherMessage {
+  align-self: flex-start;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+
+
