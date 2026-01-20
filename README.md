@@ -1,5 +1,5 @@
 # WebRTC Video Call Web Application
-[![Full-Stack-web-app](https://img.shields.io/badge/Web%20Rtc-Full-Stack-web-app-blue)](#)
+[![FullStack-webapp](https://img.shields.io/badge/Web%20Rtc-FullStack-webapp-blue)](#)
 [![License](https://img.shields.io/badge/License-MIT-green)](#)
 
 **An AI-Powered Marketplace for Artisans (Frontend Prototype)**  
