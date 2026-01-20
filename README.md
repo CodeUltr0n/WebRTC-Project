@@ -13,45 +13,45 @@ Check out the live demo here:[Video-Conferencing-app](https://webrtc-project-fro
 
 ## 🚀 Features
 
--Real-time video & audio calling using WebRTC
+Real-time video & audio calling using WebRTC
 
--One-to-one / room-based video calls
+One-to-one / room-based video calls
 
--Secure authentication using JWT
+Secure authentication using JWT
 
--Signaling server for offer/answer & ICE exchange
+Signaling server for offer/answer & ICE exchange
 
--Optional chat during calls
+Optional chat during calls
 
--Fully responsive UI (mobile, tablet, desktop)
+Fully responsive UI (mobile, tablet, desktop)
 
--Low-latency peer-to-peer connection
+Low-latency peer-to-peer connection
 
 ## 🛠 Tech Stack
 
 # Frontend
 
--React.js
+React.js
 
--HTML5 / CSS3
+HTML5 / CSS3
 
--WebRTC APIs
+WebRTC APIs
 
--Socket.IO Client
+Socket.IO Client
 
--Backend
+Backend
 
--Node.js
+Node.js
 
--Express.js
+Express.js
 
--Socket.IO
+Socket.IO
 
--JWT Authentication
+JWT Authentication
 
--Database
+Database
 
--MongoDB (for users, rooms, call logs)
+MongoDB (for users, rooms, call logs)
 
 ## 🔒 Security
 
@@ -60,4 +60,31 @@ JWT-based authentication
 Secure signaling channel
 
 No media stored on server (peer-to-peer only)
+
+## 🌱 Future Enhancements
+
+Screen sharing
+
+Group video calls
+
+Call recording
+
+Noise suppression
+
+TURN server integration
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+Ketan ChokkaraFull Stack Developer | WebRTC | MERN Stack
+
+## ⭐ If you like this project, give it a star on GitHub!
+
 
